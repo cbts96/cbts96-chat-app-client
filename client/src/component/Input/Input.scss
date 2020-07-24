@@ -1,0 +1,49 @@
+.input{
+    width:65vw;
+    padding: 8px;
+    background-color: #1a2236;
+    border: 0.2px solid white;
+    color: white;
+    font-style: italic;
+    
+    
+}
+
+.label{
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+}
+.input:focus~label{
+    margin-top: -15px;
+    transition: 0.2s;
+}
+.wrapper{
+    position: relative;
+}
+.ChatUtility{
+    width:85%;
+    padding: 8px;
+    background-color: #1a2236;
+    border: 0.2px solid white;
+    color: white;
+    font-style: italic;
+    
+}
+.ChatUtility::placeholder{
+    color: white;
+}
+
+.input-login{
+    width: 90%;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+    outline: none;
+    margin-bottom: 80px;
+    color:black;
+    transition: 300ms ease all;
+    height: 30px;
+}
+label.shrink.label{
+    top:-15px;
+}

@@ -3,10 +3,10 @@ import UserChatProfile from "../UserchatProfile/UserChatProfile";
 import UserChatSpace from "../UserChatSpace/UserChatSpace";
 import "./OneChat.scss";
 
-const OneChat = () => {
+const OneChat = ({name}) => {
   return (
     <div className="one-chat">
-      <UserChatProfile />
+      <UserChatProfile name={name}/>
       <UserChatSpace />
     </div>
   );

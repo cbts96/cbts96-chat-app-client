@@ -1,9 +1,5 @@
-const dotenv=require("dotenv");
-dotenv.config({path:"./config.env"})
-const app=require("./app");
-
 const http = require('http');
-
+const express = require('express');
 const socketio = require('socket.io');
 const cors = require('cors');
 
@@ -11,7 +7,7 @@ const { addUser, removeUser, getUser, getUsersInRoom } = require('./users');
 
 const router = require('./Routes/Router');
 
-
+const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
@@ -51,9 +47,5 @@ io.on('connect', (socket) => {
     }
   })
 });
-
-const Port=process.env.PORT|| 3001;
-
-app.listen(Port,()=>{
-    console.log(`App listening on port ${Port}`);
-})
+const port = 3001
+server.listen(process.env.PORT || 3001, () => console.log(`Server has started. on port ${port}`));

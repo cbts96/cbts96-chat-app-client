@@ -5,10 +5,10 @@ import ChatSpace from "../ChatSpace/ChatSpace";
 import ToolbarBottom from "../ToolbarBottom/ToolbarBottom";
 
 
-const Chat=()=>(
+const Chat=({room,users,name})=>(
     <div className="chat">
-        <ToolBarTop />
-        <ChatSpace />
+        <ToolBarTop room={room} />
+        <ChatSpace users={users} name={name}/>
         <ToolbarBottom />
     </div>
 )

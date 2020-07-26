@@ -1,22 +1,22 @@
 import React,{useState,useEffect} from "react";
 import ChatUtility from "../ChatUtility/ChatUtility";
-import ChatToolbarTop from "../Chat/Chat";
+import Chat from "../Chat/Chat";
 import queryString from 'query-string';
 import io from "socket.io-client";
 import "./MainPage.scss";
 
 let socket;
-const MainPage = ({ history,location }) => {
+const MainPage = ({ location }) => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
-  const [users, setUsers] = useState("");
+  const [users, setUsers] = useState([""]);
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = "http://localhost:5000/";
+  const ENDPOINT = "http://localhost:3001/";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
-    console.log(location)
+    
 
     socket = io(ENDPOINT);
 
@@ -49,8 +49,8 @@ const MainPage = ({ history,location }) => {
   };
   return (
     <div className="mainPage">
-      <ChatUtility room={room}/>
-      <ChatToolbarTop />
+      <ChatUtility room={room} name={name} users={users}/>
+      <Chat room={room} users={users} name={name} />
     </div>
   );
 };

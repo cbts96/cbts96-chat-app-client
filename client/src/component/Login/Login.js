@@ -10,6 +10,7 @@ import { withRouter, Link } from "react-router-dom";
 const Login = () => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
+  
 
   return (
     <div className="login-warapper">
@@ -29,7 +30,7 @@ const Login = () => {
               // }
               InputLogin
             />
-            <Input label="Your Full Name" name={"Fullname"} InputLogin type="text" onChange={(event) => setRoom(event.target.value)} />
+            <Input label="Room Name" name={"RoomName"} InputLogin type="text" onChange={(event) => setRoom(event.target.value)} />
             
           </form>
           <Link

@@ -4,8 +4,9 @@ import Input from "../Input/Input";
 
 import ChatUtilityOnline from "../ChatUtilityOnline/ChatUtilityOnline";
 
-const ChatUtility = ({room}) => {
+const ChatUtility = ({room,name,users}) => {
   
+  console.log(users)
 return (
   
   
@@ -27,8 +28,11 @@ return (
       <Input placeholder="Search Chats ....." ChatUtility />
     </div>
   {
-     room? <ChatUtilityOnline name={"Mr A"}/>:null
-    
+     
+        users.map((key,value)=>{
+          return room? (<ChatUtilityOnline key={value} room={room} name={name} users={users}/>):null
+        })
+          
    }
    
   </div>

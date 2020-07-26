@@ -5,8 +5,9 @@ import Input from "../Input/Input";
 import ChatUtilityOnline from "../ChatUtilityOnline/ChatUtilityOnline";
 
 const ChatUtility = ({room,name,users}) => {
-  
-  console.log(users)
+  console.log(name);
+  console.log(users);
+  console.log(room);
 return (
   
   

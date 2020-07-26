@@ -47,6 +47,7 @@ const MainPage = ({ location }) => {
       socket.emit("sendMessage", message, () => setMessage(""));
     }
   };
+ 
   return (
     <div className="mainPage">
       <ChatUtility room={room} name={name} users={users}/>

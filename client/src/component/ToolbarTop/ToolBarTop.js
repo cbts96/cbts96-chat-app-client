@@ -5,7 +5,7 @@ import Vcall from "../../images/vcall.png";
 
 import { withRouter } from "react-router-dom";
 
-const ToolBarTop = ({ history, room }) => (
+const ToolBarTop = ({ history, room,name,privateChat }) => (
   <div className="toolbar-top">
     <div className="online-left">
       <img src={Friend} className="img-friend-toolbar" alt="friend" />
@@ -14,7 +14,7 @@ const ToolBarTop = ({ history, room }) => (
         <div className="writing">writting...</div>
       </div>
     </div>
-    <div className="room-name">Your Current Room is: {room}</div>
+<div className="room-name">{privateChat?`You are chatting with: ${name}`:(`Your Current Room is: ${room}`)}</div>
     <div className="toolbar">
       <span>
         <i className="fas fa-phone-alt call"></i>

@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    width: 100vw;
+
+}
+.current-user{
+    background-color: #3d6ad6;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+.other-user{
+    background-color: gray;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.name{
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+}
+.admin,.admin-left{
+    color: red;
+
+}
+.current-chatting{
+    
+}

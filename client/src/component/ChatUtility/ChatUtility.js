@@ -5,9 +5,12 @@ import Input from "../Input/Input";
 import ChatUtilityOnline from "../ChatUtilityOnline/ChatUtilityOnline";
 
 const ChatUtility = ({room,name,users}) => {
-  console.log(name);
-  console.log(users);
-  console.log(room);
+ 
+  let result = users.map(a => a.name);
+  //Object.values(result);
+  
+
+
 return (
   
   
@@ -30,8 +33,8 @@ return (
     </div>
   {
      
-        users.map((key,value)=>{
-          return room? (<ChatUtilityOnline key={value} room={room} name={name} users={users}/>):null
+        result.map((key,value)=>{
+          return room? (<ChatUtilityOnline key={key} name={key} />):null
         })
           
    }

@@ -9,10 +9,13 @@ let socket;
 const MainPage = ({ location }) => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
-  const [users, setUsers] = useState([""]);
+  const [users, setUsers] = useState([]);
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = "http://localhost:3001/";
+  
+  const [privateMess,setPrivateMess]=useState()
+  const [privateChat,setPrivateChat]=useState(false);
+  const ENDPOINT = "https://basic-chat-app-server.herokuapp.com/";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -47,11 +50,12 @@ const MainPage = ({ location }) => {
       socket.emit("sendMessage", message, () => setMessage(""));
     }
   };
- 
+  
   return (
     <div className="mainPage">
-      <ChatUtility room={room} name={name} users={users}/>
-      <Chat room={room} users={users} name={name} />
+      
+      <ChatUtility room={room}  users={users}/>
+      <Chat room={room} privateChat={privateChat} users={users} sendMessage={sendMessage} name={name} message={message} setMessage={setMessage} messages={messages}  />
     </div>
   );
 };

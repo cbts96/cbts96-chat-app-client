@@ -1,0 +1,30 @@
+.img-friend-toolbar {
+  width: 45px;
+  height: 45px;
+  margin-left: 20px;
+}
+.online-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+.user-chat-profile{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-width: 20vw;
+   min-height: 10vh;
+   
+   
+}
+.user-chat-profile .name{
+    color :rgba(255,255,255,.75);
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.time-from-now{
+    color: gray;
+    font-size: 15px;
+}

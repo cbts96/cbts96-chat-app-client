@@ -1,0 +1,88 @@
+.img-friend-toolbar,
+.vcall {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+.toolbar-top {
+  display: flex;
+  padding: 20px;
+  height: 5vh;
+  width: 100vw;
+  border-bottom: 0.5px solid #f0e5e567;
+
+  justify-content: space-between;
+}
+.toolbar-top .name {
+  color: white;
+  margin-left: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.writing {
+  color: yellowgreen;
+}
+.online-container {
+  display: flex;
+  flex-direction: column;
+}
+.online-left {
+  height: 5vh;
+  display: flex;
+}
+.toolbar {
+    transform: translateX(-470px);
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.call{
+    color: white;
+    background-color: #6BD152;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+.vcall{
+    cursor: pointer;
+}
+button{
+  min-width: 65px;
+width: auto;
+height: 50px;
+letter-spacing: 0.5px;
+line-height: 50px;
+padding: 0 35px 0 35px;
+font-size: 15px;
+background-color: #4267b2;
+color: white;
+text-transform: uppercase;
+font-family: "Open Sans Condensed";
+font-weight: bolder;
+border: none;
+cursor: pointer;
+border-color: #4267b2;
+outline: none;
+margin-left: 10px;
+}
+button:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.room-name{
+  color: white;
+    margin-right: 322px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

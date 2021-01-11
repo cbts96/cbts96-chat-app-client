@@ -1,0 +1,46 @@
+.toolbar-bottom-container{
+  display: flex;
+  padding: 20px;
+  height: 5vh;
+  width:78vw;
+  border-top: 0.5px solid #f0e5e567;
+ 
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-paper-plane,.fa-folder-plus,.fa-smile{
+    color: white;
+   border: 0.1px solid gray;
+   padding: 10px;
+   cursor: pointer;
+   
+}
+.fa-paper-plane:hover,.fa-folder-plus:hover{
+    color: white;
+     background-color:#d5deeb;
+     
+ }
+.toolbar-bottom-container .right-icon{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.fa-folder-plus{
+    margin-right: 8px;
+}
+.fa-paper-plane{
+    background-color: #0a80ff;
+    
+}
+.fa-folder-plus:hover{
+    color: #0a80ff;
+background-color:#d5deeb;
+}
+.fa-paper-plane:hover{
+    color: #0a80ff;
+background-color:#d5deeb;
+}
+.fa-smile:hover{
+    color: #0a80ff;
+    background-color:#d5deeb;
+}

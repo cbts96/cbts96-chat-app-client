@@ -1,0 +1,99 @@
+.chat-utility{
+    width: 20%;
+    height: 100%;
+    overflow: scroll;
+    border-right: 0.5px solid #f0e5e567;
+    background-color: #1a2236;
+    opacity: 0.95;
+    
+  
+    
+    
+}
+
+.gorup-chat{
+    color: whitesmoke;;
+
+    
+}
+.group{
+    margin-bottom: 20px;
+}
+.title{
+    color: white;
+}
+.group{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+.fa-user-friends,.fa-plus-circle{
+     color: white;
+    border: 0.1px solid gray;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.fa-user-friends{
+    margin-right: 20px;
+}
+.fa-user-friends:hover,.fa-plus-circle:hover{
+   color: #0a80ff;
+    background-color:#d5deeb;
+    
+}
+.search-chat{
+    margin-top: 10px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.img-friend{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    position: relative;
+}
+.friend-container{
+   
+    display: flex;
+    border: 0.1px solid;
+    width: 100%;
+    color: #0a80ff;
+    border-top: none;
+    border-right: none;
+    border-bottom: 0.5px solid #f0e5e567;
+    padding-bottom: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.friend-container:hover{
+    opacity: 1;
+}
+.friend-container .name,.count{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px  40px ;
+    min-width: 70px;
+}
+.friend-container .online{
+    width: 20px;
+    height: 20px;
+    position: absolute  ;
+    left: 4%
+}
+.friend-container .count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 90px;
+    min-width: 30px;
+    color: white;
+    background-color: #0a80ff;
+   border-radius: 100%;
+
+}

@@ -1,0 +1,17 @@
+.user-chat-space{
+    max-height: 30vh;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+}
+.your-chat-content{
+    color :white;
+    background-color: #0a80ff;
+    padding: 15px;
+    border-radius: 5px;;
+}
+.other-chat-content{
+    color :rgba(255,255,255,.75);
+    padding: 15px;
+    border-radius: 5px;;
+}
